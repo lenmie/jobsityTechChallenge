@@ -1,9 +1,9 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-import HomeScreen from '../app/screens/HomeScreen';
 import DetailScreen from '../app/screens/DetailScreen';
 import { Show } from '../models/show.interface';
+import HomeScreen from '../app/screens/Home/HomeScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
