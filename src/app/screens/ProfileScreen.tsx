@@ -1,67 +1,8 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
-import {
-  StyleSheet,
-  Text,
-  Image,
-  FlatList,
-  View,
-  TouchableOpacity,
-} from 'react-native';
-import FeedItem from '../components/FeedItem';
-
+import { StyleSheet, View } from 'react-native';
 
 export default function ProfileScreen({ route, navigation }) {
-  const user = route.params.user;
-
-  const [shows, setShows] = useState([]);
-
-  useEffect(() => {
-    const randomShows = unsplash.shows.getRandom({
-      count: 6,
-      username: user.username,
-    });
-    randomShows.then(result => {
-      if (result.type === 'success') {
-        setShows(result.response);
-      }
-    });
-  }, []);
-
-  return (
-    <View style={styles.container}>
-      <TouchableOpacity
-        onPress={() => navigation.goBack()}
-        style={{
-          backgroundColor: 100,
-          width: 50,
-          height: 50,
-        }}></TouchableOpacity>
-      <View style={styles.profileContainer}>
-        <Image
-          source={{ uri: user['profile_image'].small }}
-          style={styles.profileImage}
-        />
-        <View>
-          <Text style={styles.profileName}>{user.name}</Text>
-          <Text numbeOfLines={3} style={styles.subtitle}>
-            {user.bio}
-          </Text>
-        </View>
-      </View>
-      <Text style={styles.title}>My Shows</Text>
-
-      {shows && (
-        <FlatList
-          numColumns={2}
-          data={shows}
-          renderItem={({ item, index }) => (
-            <FeedItem item={item} index={index} />
-          )}
-        />
-      )}
-    </View>
-  );
+  return <View style={styles.container}></View>;
 }
 
 const styles = StyleSheet.create({

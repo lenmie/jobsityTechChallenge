@@ -8,11 +8,11 @@ import { getShows } from '../../services/TVMazeService';
 import FeedItem from '../components/FeedItem';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
+export type HomeScreenNavigationProp = Props['navigation'];
 
 export default function HomeScreen({ navigation }: Props) {
   const [shows, setShows] = useState<Show[]>([]);
   const [page, setPage] = useState(1);
-
   useEffect(() => {
     getShows(page).then(newShows => setShows([...shows, ...newShows]));
   }, [page, shows]);

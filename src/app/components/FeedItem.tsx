@@ -12,6 +12,7 @@ import LinearGradient from 'react-native-linear-gradient';
 const { width, height } = Dimensions.get('screen');
 import { useNavigation } from '@react-navigation/native';
 import { Show } from '../../models/show.interface';
+import { HomeScreenNavigationProp } from '../screens/HomeScreen';
 
 interface Props {
   item: Show;
@@ -19,11 +20,11 @@ interface Props {
 }
 
 export default function FeedItem({ item, index }: Props) {
-  const navigation = useNavigation();
+  const navigation = useNavigation<HomeScreenNavigationProp>();
 
   return (
     <TouchableOpacity
-      onPress={() => navigation.navigate('Detail', item)}
+      onPress={() => navigation.push('Detail', item)}
       style={{ marginTop: index % 2 === 0 ? 0 : 30 }}>
       <ImageBackground
         source={{ uri: item.image.original }}

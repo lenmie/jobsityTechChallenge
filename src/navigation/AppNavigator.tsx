@@ -5,7 +5,7 @@ import HomeScreen from '../app/screens/HomeScreen';
 import DetailScreen from '../app/screens/DetailScreen';
 import { Show } from '../models/show.interface';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export type RootStackParamList = {
   Home: undefined;

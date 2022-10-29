@@ -6,9 +6,7 @@ import {
   Dimensions,
   View,
   Animated,
-  Image,
   ImageBackground,
-  TouchableOpacity,
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import { RootStackParamList } from '../../navigation/AppNavigator';
@@ -52,13 +50,6 @@ export default function DetailScreen({ route, navigation }: Props) {
           start={{ x: 0, y: 0 }}
           end={{ x: 0, y: 1 }}
           style={styles.linearGradient}>
-          <TouchableOpacity
-            onPress={() => navigation.goBack()}
-            style={{
-              backgroundColor: 100,
-              width: 50,
-              height: 50,
-            }}></TouchableOpacity>
           <View style={styles.textContainer}>
             <Animated.Text
               numberOfLines={2}
