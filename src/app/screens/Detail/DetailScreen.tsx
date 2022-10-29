@@ -1,6 +1,6 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import React from 'react';
-import { Dimensions } from 'react-native';
+import { Button, Dimensions } from 'react-native';
 import { RootStackParamList } from '../../../navigation/AppNavigator';
 import {
   BackgroundImage,
@@ -46,6 +46,10 @@ export default function DetailScreen({ route, navigation }: Props) {
               fontWeight="300">
               {`${item.type} votos`}
             </Subtitle>
+            <Button
+              title="episode list"
+              onPress={() => navigation.push('EpisodeList', { id: item.id })}
+            />
           </TextContainer>
         </Gradient>
       </BackgroundImage>

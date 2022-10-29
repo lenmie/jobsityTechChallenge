@@ -1,8 +1,14 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
-export default function ProfileScreen({ route, navigation }) {
-  return <View style={styles.container}></View>;
+export default function EpisodeListScreen({ route, navigation }) {
+  const { id } = route.params;
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>{id}</Text>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -55,5 +61,6 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
+    backgroundColor: 'red',
   },
 });
