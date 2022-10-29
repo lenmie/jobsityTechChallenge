@@ -5,7 +5,7 @@ import { FlatList } from 'react-native';
 import { Show } from '../../../models/show.interface';
 import { RootStackParamList } from '../../../navigation/AppNavigator';
 import { getShows } from '../../../services/TVMazeService';
-import FeedItem from '../../components/FeedItem';
+import FeedItem from '../../components/FeedItem/FeedItem';
 import {
   HomeScreenContainer,
   HeaderContainer,
