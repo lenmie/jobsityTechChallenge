@@ -22,7 +22,7 @@ export default function HomeScreen({ navigation }: Props) {
     getShows(page).then(newShows =>
       setShows(previousShows => [...previousShows, ...newShows]),
     );
-  }, []);
+  }, [page]);
   console.log('render');
 
   return (
@@ -43,7 +43,9 @@ export default function HomeScreen({ navigation }: Props) {
           renderItem={({ item, index }) => (
             <FeedItem item={item} index={index} />
           )}
-          onEndReached={() => {}}
+          onEndReached={() => {
+            setPage(page + 1);
+          }}
         />
       )}
     </HomeScreenContainer>
