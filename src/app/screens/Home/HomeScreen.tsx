@@ -28,7 +28,7 @@ export default function HomeScreen({ navigation }: Props) {
   console.log('render');
 
   return (
-    <HomeScreenContainer flex={1} bg="#1B">
+    <HomeScreenContainer flex={1} bg="#1B1B1B">
       <HeaderContainer
         height={100}
         width="100%"
@@ -37,9 +37,9 @@ export default function HomeScreen({ navigation }: Props) {
         flexDirection="row">
         <Title
           fontSize={30}
-          fontFamily="MuseoSans"
           color="#FFFFFF"
           ml={20}
+          fontFamily="Roboto-Bold"
           mb={20}>
           Home
         </Title>
