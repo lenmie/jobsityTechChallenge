@@ -1,3 +1,8 @@
+export interface ScoredShow {
+  score: number;
+  show: Show;
+}
+
 export interface Show {
   id: number;
   url: string;
