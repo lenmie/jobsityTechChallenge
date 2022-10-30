@@ -10,7 +10,9 @@ export async function getShows(page = 1): Promise<Show[]> {
 
     const data = await response.json();
 
-    return data;
+    const shuffledData = data.sort(() => 0.5 - Math.random());
+
+    return shuffledData;
   } catch (error) {
     console.log(error);
 

@@ -1,7 +1,4 @@
 import React from 'react';
-import { Dimensions } from 'react-native';
-
-const { width, height } = Dimensions.get('screen');
 import { useNavigation } from '@react-navigation/native';
 import { Show } from '../../../models/show.interface';
 import {
@@ -9,9 +6,9 @@ import {
   ContainerTouchable,
   Gradient,
   Subtitle,
+  TextContainer,
   Title,
 } from './FeedItem.styled';
-import { TextContainer } from '../../screens/Detail/DetailScreen.styled';
 import { HomeScreenNavigationProp } from '../../screens/Home/HomeScreen';
 
 interface Props {
@@ -25,38 +22,38 @@ export default function FeedItem({ item, index }: Props) {
   return (
     <ContainerTouchable
       onPress={() => navigation.push('Detail', item)}
-      marginTop={index % 2 === 0 ? 0 : 30}>
+      mt={index % 2 === 0 ? 0 : 30}
+      mx={10}>
       <BackgroundImage
         source={{ uri: item.image.original }}
         imageStyle={{ borderRadius: 10 }}
-        width={width / 2.5}
-        height={height / 3.75}
-        marginLeft={15}
+        justifyContent="flex-end"
+        width={180}
+        height={260}
         borderRadius={10}>
         <Gradient
-          colors={['rgba(0, 0, 0, 0)', 'rgba(0, 0, 0, 0.3)']}
+          colors={['rgba(0, 0, 0, 0)', 'rgba(0, 0, 0, 0.6)']}
           start={{ x: 0, y: 0 }}
           end={{ x: 0, y: 1 }}
-          marginLeft={15}
-          width={width / 2.5}
-          height={height / 3.75}
+          width="100%"
+          height="40%"
           justifyContent="flex-end"
           borderRadius={10}>
-          <TextContainer marginBottom={9} marginLeft={12}>
+          <TextContainer ml={10} mb={15}>
             <Title
               numberOfLines={1}
-              fontSize={3}
-              color="white"
-              fontWeight="600">
+              fontSize={2}
+              fontFamily="Roboto-Bold"
+              color="white">
               {item.name}
             </Title>
             <Subtitle
               numberOfLines={1}
               marginTop={5}
               fontSize={1}
-              color="white"
-              fontWeight="300">
-              {item.type}
+              fontFamily="Roboto-LightItalic"
+              color="white">
+              {item.genres[0]}
             </Subtitle>
           </TextContainer>
         </Gradient>

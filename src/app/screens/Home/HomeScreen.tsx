@@ -1,7 +1,7 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import React from 'react';
 import { useEffect, useState } from 'react';
-import { FlatList } from 'react-native';
+import { FlatList, View } from 'react-native';
 import { Show } from '../../../models/show.interface';
 import { RootStackParamList } from '../../../navigation/AppNavigator';
 import { getShows } from '../../../services/TVMazeService';
@@ -38,7 +38,7 @@ export default function HomeScreen({ navigation }: Props) {
         <Title
           fontSize={30}
           color="#FFFFFF"
-          ml={20}
+          ml={15}
           fontFamily="Roboto-Bold"
           mb={20}>
           Home
@@ -57,16 +57,18 @@ export default function HomeScreen({ navigation }: Props) {
         </SearchButton>
       </HeaderContainer>
       {!!shows.length && (
-        <FlatList
-          numColumns={2}
-          data={shows}
-          renderItem={({ item, index }) => (
-            <FeedItem item={item} index={index} />
-          )}
-          onEndReached={() => {
-            setPage(page + 1);
-          }}
-        />
+        <View style={{alignItems:'center'}}>
+          <FlatList
+            numColumns={2}
+            data={shows}
+            renderItem={({ item, index }) => (
+              <FeedItem item={item} index={index} />
+            )}
+            onEndReached={() => {
+              setPage(page + 1);
+            }}
+          />
+        </View>
       )}
     </HomeScreenContainer>
   );
