@@ -24,7 +24,7 @@ export const SelectorText = styled.Text`
   ${typography}
 `;
 
-export const Container = styled.TouchableOpacity`
+export const Container = styled.ScrollView`
   ${flexbox}
   ${layout}
   ${space}

@@ -33,7 +33,7 @@ export default function EpisodeListScreen({ route, navigation }) {
   }, [selectedSeason]);
 
   return (
-    <Container flex={1}>
+    <Container flex={1} bg="red">
       <TouchableContainer
         height={60}
         mx={15}
@@ -53,7 +53,12 @@ export default function EpisodeListScreen({ route, navigation }) {
           )}
         </>
       </TouchableContainer>
-      <OptionContainer position="absolute" top={75} zIndex={1} width="100%">
+      <OptionContainer
+        position="absolute"
+        top={75}
+        zIndex={1}
+        width="100%"
+        height={300}>
         {selected && (
           <FlatList
             data={seasons}
