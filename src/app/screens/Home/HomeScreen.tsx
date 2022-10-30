@@ -10,7 +10,9 @@ import {
   HomeScreenContainer,
   HeaderContainer,
   Title,
+  SearchButton,
 } from './HomeScreen.styled';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 export type HomeScreenNavigationProp = Props['navigation'];
@@ -26,15 +28,32 @@ export default function HomeScreen({ navigation }: Props) {
   console.log('render');
 
   return (
-    <HomeScreenContainer flex={1}>
+    <HomeScreenContainer flex={1} bg="#1B">
       <HeaderContainer
         height={100}
         width="100%"
-        justifyContent="center"
-        alignItems="center">
-        <Title fontSize={24} fontFamily="MuseoSans">
-          Discover
+        justifyContent="space-between"
+        alignItems="flex-end"
+        flexDirection="row">
+        <Title
+          fontSize={30}
+          fontFamily="MuseoSans"
+          color="#FFFFFF"
+          ml={20}
+          mb={20}>
+          Home
         </Title>
+        <SearchButton
+          height={50}
+          width={50}
+          mr={20}
+          mb={10}
+          borderRadius={40}
+          justifyContent="center"
+          alignItems="center"
+          bg="#303030">
+          <Icon size={30} color="white" name="magnify" />
+        </SearchButton>
       </HeaderContainer>
       {!!shows.length && (
         <FlatList

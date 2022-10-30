@@ -19,7 +19,6 @@ export default function EpisodeListScreen({ route, navigation }) {
   const [selectedSeason, setSelectedSeason] = useState<Season | null>(null);
   const [seasons, setSeasons] = useState<Season[]>([]);
   const [episodes, setEpisodes] = useState<Episode[]>([]);
-  console.log(seasons);
 
   const { id } = route.params;
   useEffect(() => {
