@@ -65,3 +65,44 @@ export interface Schedule {
   time: string;
   days: string[];
 }
+
+export interface Season {
+  id: number;
+  url: string;
+  number: number;
+  name: string;
+  episodeOrder: number;
+  premiereDate: string;
+  endDate: string;
+  network: Network;
+  webChannel: null;
+  image: Image;
+  summary: string;
+  _links: Links;
+}
+
+export interface Episode {
+  id: number;
+  url: string;
+  name: string;
+  season: number;
+  number: number;
+  type: Type;
+  airdate: string;
+  airtime: Airtime;
+  airstamp: string;
+  runtime: number;
+  rating: Rating;
+  image: Image;
+  summary: string;
+  _links: Links;
+}
+//TODO: CHECK IF NECCESSARY
+export enum Airtime {
+  The2200 = '22:00',
+}
+
+//TODO: CHECK IF NECCESSARY
+export enum Type {
+  Regular = 'regular',
+}
