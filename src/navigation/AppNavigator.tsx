@@ -5,6 +5,7 @@ import DetailScreen from '../app/screens/Detail/DetailScreen';
 import { Show } from '../models/show.interface';
 import HomeScreen from '../app/screens/Home/HomeScreen';
 import EpisodeListScreen from '../app/screens/EpisodeList/EpisodeListScreen';
+import SearchScreen from '../app/screens/Search/SearchScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -12,6 +13,7 @@ export type RootStackParamList = {
   Home: undefined;
   Detail: Show;
   EpisodeList: { id: number };
+  Search: undefined;
 };
 
 export default function AppNavigator() {
@@ -22,6 +24,7 @@ export default function AppNavigator() {
           headerShown: false,
         }}>
         <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Search" component={SearchScreen} />
         <Stack.Screen name="Detail" component={DetailScreen} />
         <Stack.Screen name="EpisodeList" component={EpisodeListScreen} />
       </Stack.Navigator>

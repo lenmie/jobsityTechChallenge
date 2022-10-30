@@ -44,6 +44,7 @@ export default function HomeScreen({ navigation }: Props) {
           Home
         </Title>
         <SearchButton
+          onPress={() => navigation.push('Search')}
           height={50}
           width={50}
           mr={20}
