@@ -19,12 +19,11 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Show } from '../../../models/show.interface';
 import ButtonIcon from '../../components/ButtonIcon/ButtonIcon';
 import Label from '../../components/Label/Label';
+import { cleanTextFromTags } from '../../../utils/utils';
 
 export const { width, height } = Dimensions.get('window');
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Detail'>;
-
-const regex = /(<p>|<\/p>|<b>|<\/b>)/g;
 
 const getShowSubtititle = (item: Show) =>
   `${item.premiered.slice(0, 4)} - ${item.status}\n${item.genres
@@ -48,12 +47,13 @@ export default function DetailScreen({ route, navigation }: Props) {
           end={{ x: 0, y: 1 }}
           width="100%"
           height="100%"
+          pl={20}
           justifyContent="flex-end"
           borderRadius={10}>
-          <PosterAndTitleContainer flexDirection="row" mb={20}>
+          <ButtonIcon onPress={() => navigation.pop()} name="arrow-left" />
+          <PosterAndTitleContainer flexDirection="row" mb={20} mt={10}>
             <PosterImage
               resizeMode="contain"
-              ml={20}
               source={{ uri: item.image.original }}
               height={250}
               width={150}
@@ -97,7 +97,7 @@ export default function DetailScreen({ route, navigation }: Props) {
             Summary
           </Title>
           <Subtitle mt={10} fontSize={15} color="white" fontFamily="Roboto">
-            {item.summary.replaceAll(regex, '')}
+            {cleanTextFromTags(item.summary)}
           </Subtitle>
           {!!item.schedule.days.length && (
             <>

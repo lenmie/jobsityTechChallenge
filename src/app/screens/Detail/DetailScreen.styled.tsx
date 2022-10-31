@@ -48,6 +48,7 @@ export const PosterAndTitleContainer = styled.View`
 
 export const Gradient = styled(LinearGradient)`
   ${flexbox}
+  ${space}
 `;
 
 export const TextContainer = styled.View`
