@@ -19,7 +19,7 @@ export interface Show {
   schedule: Schedule;
   rating: Rating;
   weight: number;
-  network: Network;
+  network?: Network;
   webChannel: null;
   dvdCountry: null;
   externals: Externals;
@@ -63,7 +63,7 @@ export interface Country {
 }
 
 export interface Rating {
-  average: number;
+  average?: number;
 }
 
 export interface Schedule {
