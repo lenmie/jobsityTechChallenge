@@ -13,5 +13,3 @@ After cloning the project, move to its root folder and then run
 yarn install --ignore-engines
 yarn android
 ```
-
-## Things that were left behind:
