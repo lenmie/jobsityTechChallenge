@@ -23,10 +23,14 @@ export default function AppNavigator() {
         screenOptions={{
           headerShown: false,
         }}>
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Search" component={SearchScreen} />
-        <Stack.Screen name="Detail" component={DetailScreen} />
-        <Stack.Screen name="EpisodeList" component={EpisodeListScreen} />
+        <Stack.Group>
+          <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen name="Search" component={SearchScreen} />
+        </Stack.Group>
+        <Stack.Group>
+          <Stack.Screen name="Detail" component={DetailScreen} />
+          <Stack.Screen name="EpisodeList" component={EpisodeListScreen} />
+        </Stack.Group>
       </Stack.Navigator>
     </NavigationContainer>
   );

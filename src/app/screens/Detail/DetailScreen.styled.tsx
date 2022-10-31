@@ -9,10 +9,11 @@ import {
   system,
   typography,
 } from 'styled-system';
-import ButtonIcon from '../../components/ButtonIcon/ButtonIcon';
 
 export const Container = styled.View`
   ${flexbox}
+  ${color}
+  ${space}
 `;
 
 export const BackgroundImage = styled.ImageBackground`
@@ -58,6 +59,7 @@ export const TextContainer = styled.View`
 export const Title = styled.Text`
   ${typography}
   ${color}
+  ${space}
 `;
 
 export const Subtitle = styled.Text`
@@ -69,4 +71,16 @@ export const Subtitle = styled.Text`
 export const RatingContainer = styled.View`
   ${flexbox}
   ${space}
+`;
+
+export const LabelContainer = styled.View`
+  ${flexbox}
+  ${space}
+`;
+
+export const SeeEpisodesButton = styled.TouchableOpacity`
+  ${flexbox}
+  ${space}
+  ${color}
+  ${layout}
 `;
