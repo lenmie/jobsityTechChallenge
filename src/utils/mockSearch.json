@@ -1,0 +1,586 @@
+[
+    {
+        "score": 0.45984206,
+        "show": {
+            "id": 6886,
+            "url": "https://www.tvmaze.com/shows/6886/carlos",
+            "name": "Carlos",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Crime",
+                "Thriller"
+            ],
+            "status": "Ended",
+            "runtime": 110,
+            "averageRuntime": 110,
+            "premiered": "2010-05-19",
+            "ended": "2010-06-02",
+            "officialSite": "http://www.canalplus.fr/c-cinema/c-les-films-en-salles/cid354533-carlos-le-film.html",
+            "schedule": {
+                "time": "20:45",
+                "days": [
+                    "Wednesday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 45,
+            "network": {
+                "id": 105,
+                "name": "Canal+",
+                "country": {
+                    "name": "France",
+                    "code": "FR",
+                    "timezone": "Europe/Paris"
+                },
+                "officialSite": null
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": 26864,
+                "thetvdb": 164451,
+                "imdb": "tt1321865"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/25/64913.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/25/64913.jpg"
+            },
+            "summary": "<p>The story of Venezuelan revolutionary, Ilich Ramirez Sanchez, who founded a worldwide terrorist organization and raided the OPEC headquarters in 1975 before being caught by the French police. \t\t\t\t \t \t\t\t\t\t</p>",
+            "updated": 1573239587,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/6886"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/400004"
+                }
+            }
+        }
+    },
+    {
+        "score": 0.33599696,
+        "show": {
+            "id": 41263,
+            "url": "https://www.tvmaze.com/shows/41263/carols-second-act",
+            "name": "Carol's Second Act",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Comedy",
+                "Medical"
+            ],
+            "status": "Ended",
+            "runtime": 30,
+            "averageRuntime": 30,
+            "premiered": "2019-09-26",
+            "ended": "2020-03-12",
+            "officialSite": "https://www.cbs.com/shows/carols-second-act/",
+            "schedule": {
+                "time": "21:30",
+                "days": [
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": 5.8
+            },
+            "weight": 91,
+            "network": {
+                "id": 2,
+                "name": "CBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": "https://www.cbs.com/"
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 364075,
+                "imdb": "tt9140108"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/209/523144.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/209/523144.jpg"
+            },
+            "summary": "<p><b>Carol's Second Act</b> is a comedy about a woman who embarks on a unique second act after raising her children, getting divorced, and retiring from teaching: pursuing her dream of becoming a doctor. At age 50, Carol is a medical intern and must sink or swim with peers who are half her age. It's her enthusiasm, perspective, and yes, even her age that may be exactly what will make her second act a great success.</p>",
+            "updated": 1641081965,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/41263"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1802069"
+                }
+            }
+        }
+    },
+    {
+        "score": 0.32882118,
+        "show": {
+            "id": 6040,
+            "url": "https://www.tvmaze.com/shows/6040/carlos-rey-emperador",
+            "name": "Carlos, Rey Emperador",
+            "type": "Scripted",
+            "language": "Spanish",
+            "genres": [
+                "Drama",
+                "History"
+            ],
+            "status": "Ended",
+            "runtime": 75,
+            "averageRuntime": 75,
+            "premiered": "2015-09-07",
+            "ended": "2016-02-01",
+            "officialSite": null,
+            "schedule": {
+                "time": "22:00",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": 7
+            },
+            "weight": 40,
+            "network": {
+                "id": 99,
+                "name": "TVE",
+                "country": {
+                    "name": "Spain",
+                    "code": "ES",
+                    "timezone": "Europe/Madrid"
+                },
+                "officialSite": null
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 295076,
+                "imdb": "tt4418020"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/143/358995.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/143/358995.jpg"
+            },
+            "summary": "<p>Historical series about Carlos I of Spain and V of Germany, born in 1500 and died in 1558, who ruled the crowns of Castile, including the Kingdom of Navarra and Aragon between 1516 and 1556, and was also Emperor of the Holy Roman Empire Carlos V from 1520 to 1558. Carlos was the grandson of Ferdinand and Isabella and son of Philip the Handsome and Joanna I of Castile. A young man whose willpower, tenacity and determination become the most powerful man in Europe, despite the hostility that surrounds it and the large size of its rivals.</p>",
+            "updated": 1574363868,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/6040"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/411510"
+                }
+            }
+        }
+    },
+    {
+        "score": 0.30610156,
+        "show": {
+            "id": 59692,
+            "url": "https://www.tvmaze.com/shows/59692/vita-da-carlo",
+            "name": "Vita da Carlo",
+            "type": "Scripted",
+            "language": "Italian",
+            "genres": [
+                "Comedy"
+            ],
+            "status": "Running",
+            "runtime": null,
+            "averageRuntime": 30,
+            "premiered": "2021-11-05",
+            "ended": null,
+            "officialSite": "https://www.amazon.com/Vita-Carlo-Season-Official-Trailer/dp/B09KD962MV",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 63,
+            "network": null,
+            "webChannel": {
+                "id": 3,
+                "name": "Prime Video",
+                "country": null,
+                "officialSite": "https://www.primevideo.com"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 411799,
+                "imdb": "tt14691760"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/386/965283.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/386/965283.jpg"
+            },
+            "summary": "<p>For the first time ever, Carlo Verdone plays himself in a TV series that tells about his private life and the difficult relationship with a loving, jealous and oppressive mother: Rome. If the public image of Carlo is that of a generous man, available and always ready for a selfie with an admirer...</p>",
+            "updated": 1640626307,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/59692"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2243657"
+                }
+            }
+        }
+    },
+    {
+        "score": 0.30352604,
+        "show": {
+            "id": 10151,
+            "url": "https://www.tvmaze.com/shows/10151/christmas-carols-on-itv",
+            "name": "Christmas Carols on ITV",
+            "type": "Variety",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 55,
+            "averageRuntime": 59,
+            "premiered": "2013-12-24",
+            "ended": null,
+            "officialSite": null,
+            "schedule": {
+                "time": "23:45",
+                "days": [
+                    "Saturday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 66,
+            "network": {
+                "id": 35,
+                "name": "ITV",
+                "country": {
+                    "name": "United Kingdom",
+                    "code": "GB",
+                    "timezone": "Europe/London"
+                },
+                "officialSite": "https://www.itv.com/"
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/34/86661.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/34/86661.jpg"
+            },
+            "summary": "<p>A live traditional candlelit Christmas Eve carol service.</p>",
+            "updated": 1638792298,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/10151"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2231312"
+                }
+            }
+        }
+    },
+    {
+        "score": 0.2893229,
+        "show": {
+            "id": 57571,
+            "url": "https://www.tvmaze.com/shows/57571/carlos-ghosn-the-last-flight",
+            "name": "Carlos Ghosn: The Last Flight",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [
+                "Crime"
+            ],
+            "status": "Ended",
+            "runtime": 45,
+            "averageRuntime": 45,
+            "premiered": "2021-07-14",
+            "ended": "2021-07-14",
+            "officialSite": "https://viaplay.is/series/carlos-ghosn-the-last-flight",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 39,
+            "network": null,
+            "webChannel": {
+                "id": 103,
+                "name": "Viaplay",
+                "country": null,
+                "officialSite": "https://viaplay.com"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 409948,
+                "imdb": "tt15048602"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/356/892341.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/356/892341.jpg"
+            },
+            "summary": "<p>In December 2019, Carlos Ghosn, former CEO of the Renault-Nissan Alliance, charged with financial crimes, stunned the world by fleeing Japan in a box supposedly containing a priceless cello. It was an audacious Hollywood-worthy escape. With exclusive access to Ghosn himself, this gripping Storyville documentary charts the rise and fall of a superstar CEO from celebrated industry leader to wanted fugitive, exploring themes of corporate greed, ruthlessness, vanity and racism.</p>",
+            "updated": 1631605668,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/57571"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2169538"
+                }
+            }
+        }
+    },
+    {
+        "score": 0.28676045,
+        "show": {
+            "id": 34609,
+            "url": "https://www.tvmaze.com/shows/34609/carls-pissed",
+            "name": "Carl's Pissed",
+            "type": "Animation",
+            "language": "English",
+            "genres": [],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": null,
+            "premiered": "2007-10-19",
+            "ended": "2014-01-05",
+            "officialSite": null,
+            "schedule": {
+                "time": "",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 28,
+            "network": {
+                "id": 10,
+                "name": "Adult Swim",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                },
+                "officialSite": null
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 85372,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/143/359822.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/143/359822.jpg"
+            },
+            "summary": "<p><b>Carl's Pissed</b> is an online series on Adult Swim Video starring Carl Brutananadilewski from the popular Adult Swim program Aqua Teen Hunger Force. It features posting exclusive videos of Carl's thoughts and musings on sports-related current events.</p>",
+            "updated": 1517089239,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/34609"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1398935"
+                }
+            }
+        }
+    },
+    {
+        "score": 0.2846492,
+        "show": {
+            "id": 9998,
+            "url": "https://www.tvmaze.com/shows/9998/carols-from-kings",
+            "name": "Carols from King's",
+            "type": "Variety",
+            "language": "English",
+            "genres": [
+                "Music"
+            ],
+            "status": "Running",
+            "runtime": 75,
+            "averageRuntime": 75,
+            "premiered": "2007-12-24",
+            "ended": null,
+            "officialSite": "http://www.bbc.co.uk/programmes/b00gkvtk",
+            "schedule": {
+                "time": "17:45",
+                "days": [
+                    "Tuesday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 33,
+            "network": {
+                "id": 37,
+                "name": "BBC Two",
+                "country": {
+                    "name": "United Kingdom",
+                    "code": "GB",
+                    "timezone": "Europe/London"
+                },
+                "officialSite": "https://www.bbc.co.uk/bbctwo"
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 214971,
+                "imdb": null
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/34/85637.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/34/85637.jpg"
+            },
+            "summary": "<p>A celebration of Christmas with the annual televised service from the Chapel of King's College, Cambridge.</p>",
+            "updated": 1638811775,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/9998"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2231657"
+                }
+            }
+        }
+    },
+    {
+        "score": 0.27841657,
+        "show": {
+            "id": 60915,
+            "url": "https://www.tvmaze.com/shows/60915/carlos-reno-rescue",
+            "name": "Carlos' Reno Rescue",
+            "type": "Reality",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 30,
+            "averageRuntime": 30,
+            "premiered": "2022-02-08",
+            "ended": null,
+            "officialSite": "https://www.tvnz.co.nz/shows/carlos-reno-rescue",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Tuesday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 16,
+            "network": {
+                "id": 1031,
+                "name": "TVNZ 1",
+                "country": {
+                    "name": "New Zealand",
+                    "code": "NZ",
+                    "timezone": "Pacific/Auckland"
+                },
+                "officialSite": "https://www.tvnz.co.nz/"
+            },
+            "webChannel": null,
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": null,
+            "summary": "<p>Ex-All Black Carlos Spencer is swapping his rugby boots for work boots! Along with a team of building experts, Carlos is on a mission to renovate rooms for deserving Kiwis.</p>",
+            "updated": 1646836135,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/60915"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/2291369"
+                }
+            }
+        }
+    },
+    {
+        "score": 0.27258256,
+        "show": {
+            "id": 43494,
+            "url": "https://www.tvmaze.com/shows/43494/apache-la-vida-de-carlos-tevez",
+            "name": "Apache: La vida de Carlos Tevez",
+            "type": "Scripted",
+            "language": "Spanish",
+            "genres": [
+                "Drama",
+                "Sports"
+            ],
+            "status": "Ended",
+            "runtime": null,
+            "averageRuntime": 47,
+            "premiered": "2019-08-16",
+            "ended": "2019-08-16",
+            "officialSite": "https://www.netflix.com/title/81106517",
+            "schedule": {
+                "time": "",
+                "days": []
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 36,
+            "network": null,
+            "webChannel": {
+                "id": 1,
+                "name": "Netflix",
+                "country": null,
+                "officialSite": "https://www.netflix.com/"
+            },
+            "dvdCountry": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 367279,
+                "imdb": "tt10715172"
+            },
+            "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/208/521989.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/208/521989.jpg"
+            },
+            "summary": "<p>This gritty dramatization of the life of Carlos Tevez shows his rise to soccer stardom amid the harrowing conditions in Argentina's Fuerte Apache.</p>",
+            "updated": 1605561294,
+            "_links": {
+                "self": {
+                    "href": "https://api.tvmaze.com/shows/43494"
+                },
+                "previousepisode": {
+                    "href": "https://api.tvmaze.com/episodes/1702501"
+                }
+            }
+        }
+    }
+]

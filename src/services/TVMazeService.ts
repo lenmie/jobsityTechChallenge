@@ -67,3 +67,10 @@ export async function searchShows(query: string): Promise<ScoredShow[]> {
     return [];
   }
 }
+
+export const TVMazeService = {
+  getShows,
+  getShowSeasons,
+  getSeasonEpisodes,
+  searchShows,
+};
