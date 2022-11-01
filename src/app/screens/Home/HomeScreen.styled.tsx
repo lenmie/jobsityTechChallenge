@@ -1,24 +1,16 @@
 import styled from '@emotion/native';
-import {
-  flexbox,
-  layout,
-  space,
-  color,
-  typography,
-  border,
-} from 'styled-system';
+import { flexbox, layout, space, color, typography } from 'styled-system';
 
 export const HomeScreenContainer = styled.View`
-  ${layout}
   ${flexbox}
   ${color}
-  ${space}
 `;
 
 export const HeaderContainer = styled.View`
   ${layout}
   ${flexbox}
   ${color}
+  ${space}
 `;
 
 export const Title = styled.Text`
@@ -28,10 +20,6 @@ export const Title = styled.Text`
   ${color}
 `;
 
-export const SearchButton = styled.TouchableOpacity`
-  ${space}
-  ${color}
-  ${layout}
-  ${border}
+export const ListContainer = styled.View`
   ${flexbox}
 `;

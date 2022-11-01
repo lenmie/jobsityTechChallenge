@@ -1,7 +1,7 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import React from 'react';
 import { useEffect, useState } from 'react';
-import { FlatList, View } from 'react-native';
+import { Dimensions, FlatList } from 'react-native';
 import { Show } from '../../../models/show.interface';
 import { RootStackParamList } from '../../../navigation/AppNavigator';
 import { getShows } from '../../../services/TVMazeService';
@@ -10,9 +10,14 @@ import {
   HomeScreenContainer,
   HeaderContainer,
   Title,
-  SearchButton,
+  ListContainer,
 } from './HomeScreen.styled';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { colors } from '../../../constants/colors';
+import ButtonIcon from '../../components/ButtonIcon/ButtonIcon';
+
+const { height } = Dimensions.get('screen');
+const headerHeight = height * 0.12;
+const HOME_TITLE = 'Home';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 export type HomeScreenNavigationProp = Props['navigation'];
@@ -25,39 +30,29 @@ export default function HomeScreen({ navigation }: Props) {
       setShows(previousShows => [...previousShows, ...newShows]),
     );
   }, [page]);
-  console.log('render');
 
   return (
-    <HomeScreenContainer flex={1} bg="#1B1B1B">
+    <HomeScreenContainer flex={1} bg={colors.primaryBlack}>
       <HeaderContainer
-        height={100}
+        height={headerHeight}
         width="100%"
+        pb={10}
+        px={10}
         justifyContent="space-between"
         alignItems="flex-end"
         flexDirection="row">
         <Title
           fontSize={30}
-          color="#FFFFFF"
+          color={colors.primaryWhite}
           ml={15}
-          fontFamily="Roboto-Bold"
-          mb={20}>
-          Home
+          mb={2}
+          fontFamily="Roboto-Bold">
+          {HOME_TITLE}
         </Title>
-        <SearchButton
-          onPress={() => navigation.push('Search')}
-          height={50}
-          width={50}
-          mr={20}
-          mb={10}
-          borderRadius={40}
-          justifyContent="center"
-          alignItems="center"
-          bg="#303030">
-          <Icon size={30} color="white" name="magnify" />
-        </SearchButton>
+        <ButtonIcon onPress={() => navigation.push('Search')} name="magnify" />
       </HeaderContainer>
       {!!shows.length && (
-        <View style={{alignItems:'center'}}>
+        <ListContainer alignItems="center">
           <FlatList
             numColumns={2}
             data={shows}
@@ -68,7 +63,7 @@ export default function HomeScreen({ navigation }: Props) {
               setPage(page + 1);
             }}
           />
-        </View>
+        </ListContainer>
       )}
     </HomeScreenContainer>
   );

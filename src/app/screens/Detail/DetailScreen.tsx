@@ -1,6 +1,6 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import React from 'react';
-import { Button, Dimensions, FlatList, ScrollView } from 'react-native';
+import { FlatList, ScrollView } from 'react-native';
 import { RootStackParamList } from '../../../navigation/AppNavigator';
 import {
   BackgroundImage,
@@ -20,8 +20,6 @@ import { Show } from '../../../models/show.interface';
 import ButtonIcon from '../../components/ButtonIcon/ButtonIcon';
 import Label from '../../components/Label/Label';
 import { cleanTextFromTags } from '../../../utils/utils';
-
-export const { width, height } = Dimensions.get('window');
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Detail'>;
 
