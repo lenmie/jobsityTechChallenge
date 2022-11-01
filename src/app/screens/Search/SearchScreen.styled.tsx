@@ -42,3 +42,10 @@ export const SearchIcon = styled.View`
   ${border}
   ${flexbox}
 `;
+
+export const ResultsContainer = styled.View`
+  ${layout}
+  ${flexbox}
+  ${color}
+  ${space}
+`;

@@ -6,9 +6,11 @@ import {
   ContainerTouchable,
   Subtitle,
   Title,
+  TextContainer,
 } from './SearchShowItem.styled';
-import { TextContainer } from '../../screens/Detail/DetailScreen.styled';
 import { SearchScreenNavigationProp } from '../../screens/Search/SearchScreen';
+import { colors } from '../../../constants/colors';
+import { fontSizes } from '../../../constants/fontSizes';
 
 interface Props {
   show: Show;
@@ -27,16 +29,21 @@ export default function SearchShowItem({ show }: Props) {
         width={80}
         height={60}
       />
-      <TextContainer marginBottom={9} marginLeft={12}>
-        <Title numberOfLines={1} fontSize={3} color="white" fontWeight="600">
+      <TextContainer ml={15} width={'70%'}>
+        <Title
+          ellipsizeMode="tail"
+          numberOfLines={1}
+          fontSize={fontSizes.small}
+          color={colors.primaryWhite}
+          fontFamily="Roboto-Bold">
           {show.name}
         </Title>
         <Subtitle
           numberOfLines={1}
           marginTop={5}
-          fontSize={1}
-          color="white"
-          fontWeight="300">
+          fontSize={fontSizes.xsmall}
+          color={colors.primaryWhite}
+          fontFamily="Roboto-LightItalic">
           {show.type}
         </Subtitle>
       </TextContainer>

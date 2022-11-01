@@ -1,5 +1,4 @@
 import styled from '@emotion/native';
-import LinearGradient from 'react-native-linear-gradient';
 import {
   border,
   color,
@@ -7,7 +6,6 @@ import {
   layout,
   position,
   space,
-  system,
   typography,
 } from 'styled-system';
 
@@ -34,14 +32,7 @@ export const SelectorText = styled.Text`
   ${color}
 `;
 
-export const Container = styled.ScrollView`
-  ${flexbox}
-  ${layout}
-  ${space}
-  ${color}
-`;
-
-export const EpisodeRow = styled.View`
+export const Container = styled.View`
   ${flexbox}
   ${layout}
   ${space}
@@ -53,7 +44,7 @@ export const Option = styled.TouchableOpacity`
   ${layout}
   ${space}
   ${color}
-  ${position}
+  ${border}
 `;
 
 export const OptionContainer = styled.View`
@@ -62,39 +53,4 @@ export const OptionContainer = styled.View`
   ${space}
   ${color}
   ${position}
-`;
-
-export const Gradient = styled.View`
-  ${flexbox}
-  ${color}
-`;
-
-export const EpisodeImage = styled.Image`
-  ${system({
-    resizeMode: {
-      property: 'resizeMode',
-      properties: ['cover', 'stretch', 'contain', 'center'],
-    },
-  })}
-  ${layout}
-  ${space}
-  ${border}
-`;
-
-export const NoEpisodeImage = styled.View`
-  ${layout}
-  ${space}
-  ${border}
-`;
-
-export const EpisodeImageAndTitleContainer = styled.View`
-  ${layout}
-  ${space}
-  ${flexbox}
-`;
-
-export const TitleAndRuntimeContainer = styled.View`
-  ${layout}
-  ${space}
-  ${flexbox}
 `;
