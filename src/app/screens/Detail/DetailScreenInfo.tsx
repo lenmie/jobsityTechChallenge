@@ -17,6 +17,7 @@ import { getShowSubtititle } from '../../../utils/utils';
 import { DetailScreenNavigationProp } from './DetailScreen';
 import { useNavigation } from '@react-navigation/native';
 import { colors } from '../../../constants/colors';
+import { fontSizes } from '../../../constants/fontSizes';
 
 const { width, height } = Dimensions.get('screen');
 
@@ -59,19 +60,15 @@ export default function DetailScreenInfo({ show }: Props) {
             width={posterImageWidth}
             borderRadius={10}
           />
-          <TextContainer
-            width={'40%'}
-            justifyContent="space-around"
-            ml={26}
-            color="red">
+          <TextContainer width={'40%'} justifyContent="space-around" ml={26}>
             <Title
-              fontSize={20}
+              fontSize={fontSizes.big}
               color={colors.primaryWhite}
               fontFamily="Roboto-Bold">
               {show.name}
             </Title>
             <Subtitle
-              fontSize={15}
+              fontSize={fontSizes.medium}
               color={colors.primaryWhite}
               fontFamily="Roboto-Light">
               {getShowSubtititle(show)}
@@ -81,7 +78,7 @@ export default function DetailScreenInfo({ show }: Props) {
                 <Icon size={20} color={colors.primaryWhite} name="star" />
                 <Subtitle
                   ml={1}
-                  fontSize={15}
+                  fontSize={fontSizes.medium}
                   color={colors.primaryWhite}
                   fontFamily="Roboto-Light">
                   {`${show.rating.average}/10`}

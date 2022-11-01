@@ -15,6 +15,7 @@ import { searchShows } from '../../../services/TVMazeService';
 import SearchShowItem from '../../components/SearchShowItem/SearchShowItem';
 import ButtonIcon from '../../components/ButtonIcon/ButtonIcon';
 import { colors } from '../../../constants/colors';
+import { fontSizes } from '../../../constants/fontSizes';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Search'>;
 export type SearchScreenNavigationProp = Props['navigation'];
@@ -52,7 +53,7 @@ export default function SearchScreen({ navigation }: Props) {
             onSubmitEditing={search}
             height={50}
             ml={10}
-            fontSize={15}
+            fontSize={fontSizes.medium}
             color={colors.primaryWhite}
             fontFamily="Roboto-Medium"
           />

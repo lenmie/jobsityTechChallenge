@@ -19,10 +19,13 @@ import { RootStackParamList } from '../../../navigation/AppNavigator';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import EpisodeListScreenList from './EpisodeListScreenList';
 import { colors } from '../../../constants/colors';
+import { fontSizes } from '../../../constants/fontSizes';
 
 const { width, height } = Dimensions.get('screen');
 
 const optionWidth = width * 0.8;
+const optionHeight = width * 0.15;
+
 const selectorHeight = width * 0.12;
 
 const PICK_A_SEASON = 'PICK A SEASON';
@@ -71,13 +74,13 @@ export default function EpisodeListScreen({ route, navigation }: Props) {
           <>
             {!!selectedSeason ? (
               <SelectorText
-                fontSize={13}
+                fontSize={fontSizes.medium}
                 color={colors.primaryWhite}
                 fontFamily="Roboto-Bold">{`SEASON ${selectedSeason.number}`}</SelectorText>
             ) : (
               <>
                 <SelectorText
-                  fontSize={13}
+                  fontSize={fontSizes.medium}
                   color={colors.primaryWhite}
                   fontFamily="Roboto-Bold">
                   {PICK_A_SEASON}
@@ -109,14 +112,16 @@ export default function EpisodeListScreen({ route, navigation }: Props) {
                     setIsSelecting(false);
                     setSelectedSeason({ ...item });
                   }}
+                  my={1}
                   mx={15}
+                  borderRadius={20}
+                  height={optionHeight}
                   width={optionWidth}
                   bg={colors.primaryBlack}
                   alignItems="center"
-                  justifyContent="center"
-                  height={40}>
+                  justifyContent="center">
                   <SelectorText
-                    fontSize={17}
+                    fontSize={fontSizes.medium}
                     fontFamily="Roboto-Bold"
                     color={
                       colors.primaryWhite

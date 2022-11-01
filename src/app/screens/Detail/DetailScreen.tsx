@@ -6,6 +6,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { colors } from '../../../constants/colors';
 import DetailScreenSummary from './DetailScreenSummary';
 import DetailScreenInfo from './DetailScreenInfo';
+import { fontSizes } from '../../../constants/fontSizes';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Detail'>;
 export type DetailScreenNavigationProp = Props['navigation'];
@@ -31,7 +32,7 @@ export default function DetailScreen({ route, navigation }: Props) {
         <Title
           mr={10}
           numberOfLines={2}
-          fontSize={13}
+          fontSize={fontSizes.medium}
           color={colors.primaryWhite}
           fontFamily="Roboto-Bold">
           {GO_TO_EPISODES}

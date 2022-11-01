@@ -14,6 +14,7 @@ import {
 } from './HomeScreen.styled';
 import { colors } from '../../../constants/colors';
 import ButtonIcon from '../../components/ButtonIcon/ButtonIcon';
+import { fontSizes } from '../../../constants/fontSizes';
 
 const { height } = Dimensions.get('screen');
 const headerHeight = height * 0.12;
@@ -42,7 +43,7 @@ export default function HomeScreen({ navigation }: Props) {
         alignItems="flex-end"
         flexDirection="row">
         <Title
-          fontSize={30}
+          fontSize={fontSizes.gigantic}
           color={colors.primaryWhite}
           ml={15}
           mb={2}

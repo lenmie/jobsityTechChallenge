@@ -9,6 +9,8 @@ import {
 import { Show } from '../../../models/show.interface';
 import Label from '../../components/Label/Label';
 import { cleanTextFromTags } from '../../../utils/utils';
+import { fontSizes } from '../../../constants/fontSizes';
+import { colors } from '../../../constants/colors';
 
 interface Props {
   show: Show;
@@ -20,17 +22,25 @@ export default function DetailScreenSummary({ show }: Props) {
       <TextContainer mx={20}>
         <Title
           numberOfLines={2}
-          fontSize={20}
-          color="white"
+          fontSize={fontSizes.big}
+          color={colors.primaryWhite}
           fontFamily="Roboto-LightItalic">
           Summary
         </Title>
-        <Subtitle mt={10} fontSize={15} color="white" fontFamily="Roboto">
+        <Subtitle
+          mt={10}
+          fontSize={fontSizes.medium}
+          color={colors.primaryWhite}
+          fontFamily="Roboto">
           {cleanTextFromTags(show.summary)}
         </Subtitle>
         {!!show.schedule.days.length && (
           <>
-            <Subtitle mt={10} fontSize={15} color="white" fontFamily="Roboto">
+            <Subtitle
+              mt={10}
+              fontSize={fontSizes.medium}
+              color={colors.primaryWhite}
+              fontFamily="Roboto">
               Airing on
             </Subtitle>
             <LabelContainer flexDirection="row" my={2}>
@@ -43,8 +53,8 @@ export default function DetailScreenSummary({ show }: Props) {
               />
             </LabelContainer>
             <Subtitle
-              fontSize={15}
-              color="white"
+              fontSize={fontSizes.medium}
+              color={colors.primaryWhite}
               fontFamily="Roboto-LightItalic">
               {`at ${show.schedule.time}hs`}
             </Subtitle>

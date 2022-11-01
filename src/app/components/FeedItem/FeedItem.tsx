@@ -10,6 +10,8 @@ import {
   Title,
 } from './FeedItem.styled';
 import { HomeScreenNavigationProp } from '../../screens/Home/HomeScreen';
+import { fontSizes } from '../../../constants/fontSizes';
+import { colors } from '../../../constants/colors';
 
 interface Props {
   item: Show;
@@ -42,17 +44,17 @@ export default function FeedItem({ item, index }: Props) {
           <TextContainer ml={10} mb={15}>
             <Title
               numberOfLines={1}
-              fontSize={2}
+              fontSize={fontSizes.small}
               fontFamily="Roboto-Bold"
-              color="white">
+              color={colors.primaryWhite}>
               {item.name}
             </Title>
             <Subtitle
               numberOfLines={1}
               marginTop={5}
-              fontSize={1}
+              fontSize={fontSizes.xsmall}
               fontFamily="Roboto-LightItalic"
-              color="white">
+              color={colors.primaryWhite}>
               {item.genres[0]}
             </Subtitle>
           </TextContainer>

@@ -44,7 +44,7 @@ export const Option = styled.TouchableOpacity`
   ${layout}
   ${space}
   ${color}
-  ${position}
+  ${border}
 `;
 
 export const OptionContainer = styled.View`

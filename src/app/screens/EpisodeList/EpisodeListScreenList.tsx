@@ -12,6 +12,7 @@ import {
 import { cleanTextFromTags } from '../../../utils/utils';
 import { colors } from '../../../constants/colors';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { fontSizes } from '../../../constants/fontSizes';
 
 const { width, height } = Dimensions.get('screen');
 
@@ -55,13 +56,13 @@ export default function EpisodeListScreenList({ episodes }: Props) {
             )}
             <TitleAndRuntimeContainer ml={2}>
               <SelectorText
-                fontSize={20}
+                fontSize={fontSizes.big}
                 fontFamily="Roboto-Bold"
                 color={
                   colors.primaryWhite
                 }>{`Episode ${item.number}`}</SelectorText>
               <SelectorText
-                fontSize={12}
+                fontSize={fontSizes.medium}
                 fontFamily="Roboto-Italic"
                 color={
                   colors.primaryWhite
@@ -70,7 +71,7 @@ export default function EpisodeListScreenList({ episodes }: Props) {
           </EpisodeImageAndTitleContainer>
           <SelectorText
             fontFamily="Roboto-Light"
-            fontSize={15}
+            fontSize={fontSizes.medium}
             color={colors.primaryWhite}>{`${
             !!item.summary ? cleanTextFromTags(item.summary) : 'no episode info'
           }`}</SelectorText>

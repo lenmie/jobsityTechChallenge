@@ -1,6 +1,7 @@
 import React from 'react';
 import { TouchableContainer } from './ButtonIcon.styled';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { colors } from '../../../constants/colors';
 
 interface Props {
   onPress: Function;
@@ -17,7 +18,7 @@ export default function ButtonIcon({ onPress, name }: Props) {
       justifyContent="center"
       alignItems="center"
       bg="#303030">
-      <Icon size={30} color="white" name={name} />
+      <Icon size={30} color={colors.primaryWhite} name={name} />
     </TouchableContainer>
   );
 }

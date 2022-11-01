@@ -10,6 +10,7 @@ import {
 } from './SearchShowItem.styled';
 import { SearchScreenNavigationProp } from '../../screens/Search/SearchScreen';
 import { colors } from '../../../constants/colors';
+import { fontSizes } from '../../../constants/fontSizes';
 
 interface Props {
   show: Show;
@@ -32,7 +33,7 @@ export default function SearchShowItem({ show }: Props) {
         <Title
           ellipsizeMode="tail"
           numberOfLines={1}
-          fontSize={3}
+          fontSize={fontSizes.small}
           color={colors.primaryWhite}
           fontFamily="Roboto-Bold">
           {show.name}
@@ -40,7 +41,7 @@ export default function SearchShowItem({ show }: Props) {
         <Subtitle
           numberOfLines={1}
           marginTop={5}
-          fontSize={1}
+          fontSize={fontSizes.xsmall}
           color={colors.primaryWhite}
           fontFamily="Roboto-LightItalic">
           {show.type}
